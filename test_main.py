@@ -6,7 +6,7 @@ client = TestClient(app)
 def test_read_root():
     response = client.get("/")
     assert response.status_code == 200
-    assert response.json() == {"message": "Hello, GitHub Actions!"}
+    assert response.json() == {"message": "Hello, GitHub Actions!, Prahlad"}
 
 def test_square_number():
     response = client.get("/square/5")
